@@ -1,0 +1,12 @@
+version = "0.0.2"
+debug = true
+
+[site.frontend.head]
+title = " | Echo Go"
+keywords = "echo, go, cms"
+description = "CMS based no Golang Echo framework"
+
+[site.backend.head]
+title = " - Admin | Echo Go"
+keywords = "echo, go, cms"
+description = "CMS based no Golang Echo framework"
