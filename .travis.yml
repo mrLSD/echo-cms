@@ -6,6 +6,8 @@ go:
   - tip
 before_install:
   - go get github.com/labstack/echo
+  - go get github.com/gavv/httpexpect
+  - go get github.com/spf13/viper
 matrix:
   allow_failures:
     - go: tip
