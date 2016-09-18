@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/mrlsd/echo-go/libs"
+	"github.com/mrlsd/echo-cms/libs"
 	"net/http"
 	"testing"
 )

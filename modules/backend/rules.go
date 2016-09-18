@@ -3,8 +3,8 @@ package backend
 import (
 	"github.com/labstack/echo"
 
-	"github.com/mrlsd/echo-go/libs"
-	"github.com/mrlsd/echo-go/modules/backend/controllers"
+	"github.com/mrlsd/echo-cms/libs"
+	"github.com/mrlsd/echo-cms/modules/backend/controllers"
 )
 
 func UrlRules(e *echo.Echo) {

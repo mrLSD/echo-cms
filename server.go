@@ -4,8 +4,8 @@ import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/engine/standard"
 
-	"github.com/mrlsd/echo-go/modules/backend"
-	"github.com/mrlsd/echo-go/config"
+	"github.com/mrlsd/echo-cms/config"
+	"github.com/mrlsd/echo-cms/modules/backend"
 )
 
 func main() {
