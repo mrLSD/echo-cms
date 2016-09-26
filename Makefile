@@ -1,3 +1,12 @@
+#
+# Makefile
+# @author Evgeny Ukhanov <mrlsd@ya.ru>
+#
+
+.PHONY: run, test, build, fmt, docker-build, docker-rmi, docker-bld
+
+default: run
+
 run:
 	@go run server.go
 
