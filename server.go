@@ -2,11 +2,12 @@ package main
 
 import (
 	"github.com/labstack/echo"
-	"github.com/labstack/gommon/log"
+	//"github.com/labstack/gommon/log"
 
 	"github.com/labstack/echo/middleware"
 	"github.com/mrlsd/echo-cms/config"
 	"github.com/mrlsd/echo-cms/modules/backend"
+	"github.com/mrlsd/echo-cms/libs"
 )
 
 func main() {
@@ -19,7 +20,9 @@ func main() {
 	e.Static("/", "static")
 
 	e.Debug = true
-	e.Logger.SetLevel(log.DEBUG)
+	//e.Logger.SetLevel(log.DEBUG)
+	e.HTTPErrorHandler = libs.CustomHTTPErrorHandler
+
 	e.Pre(middleware.NonWWWRedirect())
 	e.Use(middleware.Secure())
 	e.Use(middleware.CSRF())
