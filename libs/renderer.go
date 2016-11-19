@@ -18,5 +18,5 @@ func SetRenderer(e *echo.Echo, path string) {
 	t := &Template{
 		templates: template.Must(template.ParseGlob(path)),
 	}
-	e.SetRenderer(t)
+	e.Renderer = t
 }
