@@ -18,9 +18,9 @@ func LoadConfig() {
 }
 
 type SiteHeader struct {
-	Title		string
-	Keywords	string
-	Description	string
+	Title       string
+	Keywords    string
+	Description string
 }
 
 func GetSiteHeader(moduleName string) SiteHeader {
@@ -28,7 +28,7 @@ func GetSiteHeader(moduleName string) SiteHeader {
 	path := "site." + moduleName + ".head"
 	err := viper.UnmarshalKey(path, &header)
 	if err != nil {
-			panic(fmt.Errorf("Fatal error config file: %s \n", err))
+		panic(fmt.Errorf("Fatal error config file: %s \n", err))
 	}
 	return header
 }
