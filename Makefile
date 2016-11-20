@@ -42,3 +42,10 @@ install-go:
 	@sudo ln -s /usr/local/go/bin/gofmt /usr/local/bin/gofmt
 	@echo [================================================================]
 	@echo Done.
+
+vendoring:
+	@echo Start vendoring...
+	govendor init
+	for package in $(VENDORPACKAGES) ; do \
+		gvt fetch $$package ; \
+	done
