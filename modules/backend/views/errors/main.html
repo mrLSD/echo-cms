@@ -1,5 +1,4 @@
 {{ define "errors/main" }}
-{{- template "admin/layout/header" . -}}
-<h1>Error #</h1>
-{{- template "admin/layout/footer" . -}}
+<h1>Error# {{.Code}} </h1>
+<h2>{{.Message}}</h2>
 {{ end }}

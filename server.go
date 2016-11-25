@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/labstack/echo"
-	//"github.com/labstack/gommon/log"
+	"github.com/labstack/gommon/log"
 
 	"github.com/labstack/echo/middleware"
 	"github.com/mrlsd/echo-cms/config"
@@ -20,7 +20,7 @@ func main() {
 	e.Static("/", "static")
 
 	e.Debug = true
-	//e.Logger.SetLevel(log.DEBUG)
+	e.Logger.SetLevel(log.DEBUG)
 	e.HTTPErrorHandler = libs.CustomHTTPErrorHandler
 
 	e.Pre(middleware.NonWWWRedirect())

@@ -20,7 +20,7 @@ build:
 fmt:
 	@gofmt -w -l .
 
-docker-build:
+docker-build-registry:
 	@go build server.go
 	@docker build -t echo-cms .
 	@docker tag echo-cms 192.168.1.107:5000/echo-cms
@@ -29,8 +29,13 @@ docker-build:
 docker-rmi:
 	@docker rmi echo-cms
 
-docker-bld:
-	@docker rmi echo-cms && docker build -t echo-cms .
+docker-build:
+	@go build
+	@docker rmi echo-cms
+	@docker build -t echo-cms .
+
+docker-run:
+	@docker run -p 3000:3000 --rm -it echo-cms
 
 install-go:
 	@echo Installing Golang v$(GOVERSION)...
