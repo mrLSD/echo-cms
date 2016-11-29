@@ -158,6 +158,31 @@
 			"notests": true
 		},
 		{
+			"importpath": "github.com/gin-gonic/gin/binding",
+			"repository": "https://github.com/gin-gonic/gin",
+			"vcs": "git",
+			"revision": "bb159f9260a262fccbdbd6f37f8575d1e7e6aaa0",
+			"branch": "master",
+			"path": "/binding",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/go-playground/locales",
+			"repository": "https://github.com/go-playground/locales",
+			"vcs": "git",
+			"revision": "273913d3b2ff7127452603d55dd3f6f888e4f268",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/go-playground/universal-translator",
+			"repository": "https://github.com/go-playground/universal-translator",
+			"vcs": "git",
+			"revision": "8bf00f2bdf7faea5c3583d41f57bf1eb15b743d7",
+			"branch": "master",
+			"notests": true
+		},
+		{
 			"importpath": "github.com/golang/protobuf/proto",
 			"repository": "https://github.com/golang/protobuf",
 			"vcs": "git",
@@ -799,6 +824,22 @@
 			"repository": "https://gopkg.in/alecthomas/kingpin.v2",
 			"vcs": "git",
 			"revision": "e9044be3ab2a8e11d4e1f418d12f0790d57e8d70",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "gopkg.in/go-playground/validator.v8",
+			"repository": "https://gopkg.in/go-playground/validator.v8",
+			"vcs": "git",
+			"revision": "5f57d2222ad794d0dffb07e664ea05e2ee07d60c",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "gopkg.in/go-playground/validator.v9",
+			"repository": "https://gopkg.in/go-playground/validator.v9",
+			"vcs": "git",
+			"revision": "941ce2cabc098467c3ebd66c5d705bc122f18b74",
 			"branch": "master",
 			"notests": true
 		},
