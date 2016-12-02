@@ -54,3 +54,9 @@ vendoring:
 	for package in $(VENDORPACKAGES) ; do \
 		gvt fetch $$package ; \
 	done
+
+rerun-install:
+	@go get github.com/tockins/realize
+
+rerun:
+	@realize run

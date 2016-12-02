@@ -6,8 +6,8 @@ import (
 
 	"github.com/labstack/echo/middleware"
 	"github.com/mrlsd/echo-cms/config"
-	"github.com/mrlsd/echo-cms/modules/backend"
 	"github.com/mrlsd/echo-cms/libs"
+	"github.com/mrlsd/echo-cms/modules/backend"
 )
 
 func main() {
@@ -25,7 +25,7 @@ func main() {
 
 	e.Pre(middleware.NonWWWRedirect())
 	e.Use(middleware.Secure())
-	e.Use(middleware.CSRF())
+	//e.Use(middleware.CSRF())
 	//e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 	e.Use(middleware.BodyLimit("2M"))

@@ -118,6 +118,14 @@
 			"notests": true
 		},
 		{
+			"importpath": "github.com/etgryphon/stringUp",
+			"repository": "https://github.com/etgryphon/stringUp",
+			"vcs": "git",
+			"revision": "31534ccd8cac1d3d205c906ea5722928b045ed8c",
+			"branch": "master",
+			"notests": true
+		},
+		{
 			"importpath": "github.com/fatih/structs",
 			"repository": "https://github.com/fatih/structs",
 			"vcs": "git",
@@ -164,6 +172,14 @@
 			"revision": "bb159f9260a262fccbdbd6f37f8575d1e7e6aaa0",
 			"branch": "master",
 			"path": "/binding",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/go-playground/form",
+			"repository": "https://github.com/go-playground/form",
+			"vcs": "git",
+			"revision": "d18f24949d2fcf4b367cff1424a9e1a60dd5507f",
+			"branch": "master",
 			"notests": true
 		},
 		{
@@ -342,6 +358,14 @@
 			"revision": "9a43ff0d261e0e65594422e9eee08cf301aabbe7",
 			"branch": "master",
 			"path": "/random",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/leebenson/conform",
+			"repository": "https://github.com/leebenson/conform",
+			"vcs": "git",
+			"revision": "f89effe81c1ece9c5b0fda359ebd9cf65f169a51",
+			"branch": "master",
 			"notests": true
 		},
 		{

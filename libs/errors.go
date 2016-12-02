@@ -1,8 +1,8 @@
 package libs
 
 import (
-	"net/http"
 	"github.com/labstack/echo"
+	"net/http"
 )
 
 func CustomHTTPErrorHandler(err error, c echo.Context) {
