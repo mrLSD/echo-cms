@@ -1,0 +1,38 @@
+settings:
+  resources:
+    output: outputs.log
+    log: logs.log
+  server:
+    enable: true
+    open: false
+    host: localhost
+    port: 5050
+  config:
+    flimit: 0
+projects:
+- name: echo-cms
+  path: /
+  run: true
+  bin: true
+  generate: false
+  build: false
+  fmt: true
+  test: false
+  params: []
+  watcher:
+    before: []
+    after: []
+    paths:
+    - /
+    ignore_paths:
+    - vendor
+    exts:
+    - .go
+    - .html
+    preview: false
+  cli:
+    streams: true
+  file:
+    streams: false
+    logs: false
+    errors: false
