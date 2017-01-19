@@ -17,7 +17,7 @@ func main() {
 
 	// Routers
 	backend.UrlRules(e)
-	e.Static("/", "static")
+	e.Static("/assets", "static")
 
 	//e.Debug = true
 	//e.Logger.SetLevel(log.DEBUG)
