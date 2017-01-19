@@ -85,5 +85,5 @@ func PostForm(c echo.Context) error {
 }
 
 func GetLogin(c echo.Context) error {
-	return c.Render(http.StatusOK, "admin/login", nil)
+	return c.Render(http.StatusOK, "login/main", nil)
 }

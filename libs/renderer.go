@@ -3,6 +3,7 @@ package libs
 import (
 	"github.com/labstack/echo"
 	"html/template"
+	"github.com/mrlsd/echo-cms/libs/template_helpers"
 	"io"
 )
 
@@ -16,7 +17,7 @@ func (t *Template) Render(w io.Writer, name string, data interface{}, c echo.Con
 
 func SetRenderer(e *echo.Echo, path string) {
 	t := &Template{
-		templates: template.Must(template.ParseGlob(path)),
+		templates: template.Must(template.New("main").Funcs(libs.Helpers()).ParseGlob(path)),
 	}
 	e.Renderer = t
 }

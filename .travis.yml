@@ -9,8 +9,6 @@ before_install:
   - go get github.com/gavv/httpexpect
   - go get github.com/spf13/viper
 script:
-
-
   - go build server.go
 matrix:
   allow_failures:
