@@ -27,4 +27,22 @@
 {{ js "/assets/themes/admin/components/AttentionBox/js/attention_box-min.js" -}}
 </head>
 <body>
+<div id="container">
+    <header>
+        <h1 class="logo"><a href="/">Ecgo CMS</a></h1>
+        <section class="log-area">
+            <div class="section-inner">
+                <strong>Logged in as Admin</strong>
+                <a href="/admin/logout" class="btn-2"><span>Logout</span><em class="arrow"></em></a>
+            </div>
+        </section>
+        <section>
+            <div class="section-inner">
+                <a href="/" class="btn-1"><em class="view"></em><span>View Website</span></a>
+            </div>
+        </section>
+    </header>
+    <div id="main" role="main">
+{{- template "admin/layout/sidebar" . -}}
+        <div id="content">
 {{ end }}
