@@ -1,6 +1,19 @@
 {{ define "admin/main" }}
 {{- template "admin/layout/header" . -}}
-    <b>Name+=+:</b> {{ .Name }} <br/>
+<div class="page-title">
+    <h2>Welcome Admin,</h2>
+</div>
+<ul class="dashboard-menu">
+    <li><a href="/admin/pages/create" class="create">Create a Page</a></li>
+</ul>
+<div class="content-box">
+    <div class="box-header">
+        <strong>Analytics</strong>
+    </div>
 
+    <div class="box-content">
+        <strong>Currently unavailable</strong>
+    </div>
+</div>
 {{- template "admin/layout/footer" . -}}
 {{ end }}

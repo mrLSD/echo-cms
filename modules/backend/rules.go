@@ -13,6 +13,8 @@ func UrlRules(e *echo.Echo) {
 	e.GET("/admin", controllers.GetMain)
 	e.GET("/admin/form", controllers.GetForm)
 	e.GET("/admin/login", controllers.GetLogin)
+	e.GET("/admin/pages", controllers.GetPage)
+	e.GET("/admin/pages/create", controllers.GetPageCreate)
 
 	e.POST("/admin/form", controllers.PostForm)
 }
