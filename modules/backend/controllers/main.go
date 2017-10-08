@@ -16,6 +16,18 @@ import (
 func GetMain(c echo.Context) error {
 	head := config.GetSiteHeader("backend")
 	head.SetTitle("Main+")
+
+	type tst struct {
+		title string
+		age int32
+		public bool
+		price float32
+	}
+	t := tst {
+		title: "Test",
+	}
+	fmt.Printf("%#v", t)
+
 	data := struct {
 		Name template.HTML
 		Head config.SiteHeader

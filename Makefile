@@ -6,7 +6,7 @@
 .PHONY: run, test, build, fmt, docker-build, docker-rmi, docker-bld, install-go
 default: run
 
-GOVERSION = 1.7.5
+GOVERSION = 1.9.1
 
 run:
 	@go run server.go
